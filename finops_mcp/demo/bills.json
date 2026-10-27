@@ -1,0 +1,7 @@
+[
+  {"bill_id": 101, "supplier": "Riverside Property Management", "invoice_number": "RENT-NOV", "currency": "USD", "amount": "7500.00", "due": 3},
+  {"bill_id": 102, "supplier": "Acme Cloud Hosting LLC", "invoice_number": "INV-2041", "currency": "USD", "amount": "285.00", "due": 4},
+  {"bill_id": 103, "supplier": "Northwind Office Supplies Ltd", "invoice_number": "1187", "currency": "GBP", "amount": "1135.20", "due": 11},
+  {"bill_id": 104, "supplier": "Crewline Contractor Payroll", "invoice_number": "CP-2026-11A", "currency": "USD", "amount": "3900.00", "due": 8},
+  {"bill_id": 105, "supplier": "Vector Ads Ltd", "invoice_number": "VA-7781", "currency": "USD", "amount": "1250.00", "due": 9}
+]

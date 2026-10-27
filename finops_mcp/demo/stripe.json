@@ -1,0 +1,49 @@
+{
+  "_note": "Fictional data for demo mode. Dates are day offsets from today.",
+  "invoices": [
+    {"id": "in_demo_1001", "number": "HB-1001", "customer": "Harbor Coffee Roasters", "customer_email": "ap@harborcoffee.example",
+     "currency": "USD", "amount_due": "1200.00", "issued": -40, "due": -10, "attempts": 2,
+     "lines": [{"description": "Wholesale portal, monthly plan", "quantity": 1, "amount": "1200.00"}]},
+    {"id": "in_demo_1002", "number": "HB-1002", "customer": "Pinecrest Dental", "customer_email": "office@pinecrest.example",
+     "currency": "USD", "amount_due": "3450.00", "issued": -50, "due": -20, "attempts": 3,
+     "lines": [{"description": "Patient booking integration, milestone 2", "quantity": 1, "amount": "3450.00"}]},
+    {"id": "in_demo_1003", "number": "HB-1003", "customer": "Lumen Studio", "customer_email": "studio@lumen.example",
+     "currency": "USD", "amount_due": "980.00", "issued": -10, "due": 5, "attempts": 0,
+     "lines": [{"description": "Support retainer, 7 hours", "quantity": 7, "amount": "980.00"}]},
+    {"id": "in_demo_1004", "number": "HB-1004", "customer": "Atlas Fitness Group", "customer_email": "finance@atlasfit.example",
+     "currency": "USD", "amount_due": "6200.00", "issued": -5, "due": 12, "attempts": 0,
+     "lines": [{"description": "Membership billing migration", "quantity": 1, "amount": "6200.00"}]},
+    {"id": "in_demo_1005", "number": "HB-1005", "customer": "Brightwave GmbH", "customer_email": "buchhaltung@brightwave.example",
+     "currency": "EUR", "amount_due": "2100.00", "issued": -20, "due": 2, "attempts": 1,
+     "lines": [{"description": "SEPA direct debit setup", "quantity": 1, "amount": "2100.00"}]}
+  ],
+  "payouts": [
+    {"id": "po_demo_3", "amount": "2625.10", "currency": "USD", "arrival": 2, "status": "in_transit",
+     "transactions": [
+       {"category": "charge", "gross": "1500.00", "fee": "43.80", "description": "Order 5521"},
+       {"category": "charge", "gross": "900.00", "fee": "26.40", "description": "Order 5522"},
+       {"category": "charge", "gross": "600.00", "fee": "17.70", "description": "Order 5523"},
+       {"category": "refund", "gross": "-120.00", "fee": "0.00", "description": "Partial refund, order 5498"},
+       {"category": "dispute", "gross": "-150.00", "fee": "15.00", "description": "Chargeback, charge ch_demo_77"},
+       {"category": "fee", "gross": "-2.00", "fee": "0.00", "description": "Radar screening"}
+     ]},
+    {"id": "po_demo_2", "amount": "2669.65", "currency": "USD", "arrival": -1, "status": "paid",
+     "transactions": [
+       {"category": "charge", "gross": "2400.00", "fee": "69.90", "description": "Order 5510"},
+       {"category": "charge", "gross": "350.00", "fee": "10.45", "description": "Order 5511"}
+     ]},
+    {"id": "po_demo_1", "amount": "1547.50", "currency": "USD", "arrival": -3, "status": "paid",
+     "transactions": [
+       {"category": "charge", "gross": "1800.00", "fee": "52.50", "description": "Order 5490"},
+       {"category": "refund", "gross": "-200.00", "fee": "0.00", "description": "Refund, order 5480"}
+     ]}
+  ],
+  "disputes": [
+    {"id": "dp_demo_1", "amount": "150.00", "currency": "USD", "reason": "fraudulent", "status": "needs_response",
+     "charge": "ch_demo_77", "evidence_due": 4}
+  ],
+  "balance": {
+    "USD": {"available": "4312.40", "pending": "1980.00"},
+    "EUR": {"available": "640.00", "pending": "0.00"}
+  }
+}

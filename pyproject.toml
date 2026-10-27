@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finops-mcp"
+version = "0.1.0"
+description = "Read-only MCP server that lets Claude answer finance questions from Stripe and your bills: receivables, payouts, disputes, payables, cash forecast."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Tai Nguyen" }]
+requires-python = ">=3.11"
+dependencies = ["mcp>=2.3", "stripe>=16"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+finops-mcp = "finops_mcp.server:main"
+
+[tool.setuptools]
+packages = ["finops_mcp"]
+
+[tool.setuptools.package-data]
+finops_mcp = ["demo/*.json"]
